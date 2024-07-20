@@ -103,12 +103,15 @@ header{
 
 /* header media query */
 
+/* responsive for tablet screen */
+
 @media screen and (min-width:768px) and (max-width:992px) {
     .hero_section h1{
         font-size: 70px;
     }
 }
 
+/* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:767px) {
     .hero_section{
         padding: 120px 0px !important;
@@ -121,5 +124,88 @@ header{
     .hero_section h1{
         font-size: 55px;
         font-weight: bold;
+    }
+}
+
+/* about section start*/
+
+.about_section{
+    background-color: rgb(28, 21, 61);
+    padding: 100px 0px;
+}
+
+.about_detail_container h2{
+    font-size: 40px;
+}
+
+.about_detail_wrapper img{
+    width: 100px;
+    height: fit-content;
+    margin-top: 8px;
+}
+
+.about_detail h3{
+    font-size: 35px;
+}
+
+.about_detail p{
+    color: rgb(198, 210, 210);
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* responsive for tablet screen */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .about_section{
+        padding: 50px 0px;
+    }
+    
+    .about_img img{
+        width: 100% !important;
+    }
+
+    .about_detail_container h2{
+        font-size: 23px;
+    }
+
+    .about_detail_wrapper img{
+        width: 60px;
+    }
+
+    .about_detail h3{
+        font-size: 18px;
+    }
+    
+    .about_detail p{
+        color: rgb(198, 210, 210);
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+
+/* responsive for mobile screen */
+@media screen and (min-width:340px) and (max-width:767px) {
+    .about_img img{
+        width: 100% !important;
+    }
+
+    .about_detail_container h2{
+        font-size: 25px;
+    }
+
+    .about_detail_wrapper img{
+        width: 60px;
+    }
+
+    .about_detail h3{
+        font-size: 20px;
+    }
+    
+    .about_detail p{
+        color: rgb(198, 210, 210);
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
     }
 }
