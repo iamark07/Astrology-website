@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "El Messiri", sans-serif;
+    text-decoration: none !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header section */
+header{
+    background-image: url(../assets/img/bg-image/bg-1.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.social_icon a i{
+    transition: all .3s;
+}
+.social_icon a i:hover{
+    color: rgb(144, 83, 246) !important;
+}
+
+.sub_header nav ul li a{
+    transition: all .3s;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sub_header nav ul li a:hover{
+    color: rgb(144, 83, 246) !important;
+}
+
+.menu_slider .menu_btn{
+    color: rgb(144, 83, 246) !important;
+}
+
+.menu_slider ul{
+    border: 2px solid rgb(144, 83, 246);
+}
+
+.hero_section{
+    padding: 150px 0px !important;
+}
+
+.hero_section h5{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero_section h1{
+    font-size: 85px;
+    font-weight: bold;
+}
+
+.hero_detail span i{
+    color: rgb(45, 168, 255);
+}
+
+.hero_detail p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn{
+    background-color: rgb(144, 83, 246);
+    width: 210px;
+    padding: 15px;
+    color: white;
+    border-radius: 35px;
+    font-size: 19px;
+    transition: all .3s;
+    border: none;
+}
+
+.btn:hover{
+    background-color: white !important;
+    color: black;
+}
+
+.btn-white{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 210px;
+    padding: 15px;
+    border-radius: 35px;
+    font-size: 19px;
+    transition: all .3s;
+    border: none;
+}
+
+.btn-white:hover{
+    background-color: rgb(144, 83, 246);
+    color: white
+}
+
+/* header media query */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .hero_section h1{
+        font-size: 70px;
+    }
+}
+
+@media screen and (min-width:340px) and (max-width:767px) {
+    .hero_section{
+        padding: 120px 0px !important;
+    }
+    
+    .hero_section h5{
+        font-size: 20px;
+    }
+    
+    .hero_section h1{
+        font-size: 55px;
+        font-weight: bold;
+    }
+}
