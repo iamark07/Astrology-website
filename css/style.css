@@ -129,7 +129,7 @@ header{
 
 /* about section start*/
 
-.about_section{
+.content_container{
     background-color: rgb(28, 21, 61);
     padding: 100px 0px;
 }
@@ -138,17 +138,17 @@ header{
     font-size: 45px;
 }
 
-.about_detail_wrapper img{
+.content_detail_wrapper img{
     width: 100px;
     height: fit-content;
     margin-top: 8px;
 }
 
-.about_detail h3{
+.content_detail h3{
     font-size: 35px;
 }
 
-.about_detail p{
+.content_detail p{
     color: rgb(198, 210, 210);
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
@@ -157,11 +157,11 @@ header{
 
 /* responsive for tablet screen */
 @media screen and (min-width:768px) and (max-width:992px) {
-    .about_section{
+    .content_container{
         padding: 50px 0px;
     }
     
-    .about_img img{
+    .content_img img{
         width: 100% !important;
     }
 
@@ -169,15 +169,15 @@ header{
         font-size: 23px;
     }
 
-    .about_detail_wrapper img{
+    .content_detail_wrapper img{
         width: 60px;
     }
 
-    .about_detail h3{
+    .content_detail h3{
         font-size: 18px;
     }
     
-    .about_detail p{
+    .content_detail p{
         color: rgb(198, 210, 210);
         font-size: 12px;
         font-family: "Montserrat", sans-serif;
@@ -187,7 +187,7 @@ header{
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:767px) {
-    .about_img img{
+    .content_img img{
         width: 100% !important;
     }
 
@@ -195,15 +195,15 @@ header{
         font-size: 25px;
     }
 
-    .about_detail_wrapper img{
+    .content_detail_wrapper img{
         width: 60px;
     }
 
-    .about_detail h3{
+    .content_detail h3{
         font-size: 20px;
     }
     
-    .about_detail p{
+    .content_detail p{
         color: rgb(198, 210, 210);
         font-size: 14px;
         font-family: "Montserrat", sans-serif;
@@ -253,4 +253,13 @@ header{
 .welcome_section{
     background-color: rgb(28, 21, 61);
     padding: 100px 0px;
+}
+
+
+
+/* responsive for mobile screen */
+@media screen and (min-width:340px) and (max-width:767px) {
+    .welcome_section{
+        padding: 70px 0px;
+    }
 }
