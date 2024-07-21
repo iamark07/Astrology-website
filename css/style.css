@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "El Messiri", sans-serif;
     text-decoration: none !important;
     margin: 0;
@@ -9,67 +9,69 @@
 }
 
 /* header section */
-header{
+header {
     background-image: url(../assets/img/bg-image/bg-1.jpg);
     background-size: cover;
     background-position: top center;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active {
+.navbar-toggler:focus,
+.navbar-toggler:active {
     outline: none !important;
     box-shadow: none !important;
 }
 
-.social_icon a i{
+.social_icon a i {
     transition: all .3s;
 }
-.social_icon a i:hover{
+
+.social_icon a i:hover {
     color: rgb(144, 83, 246) !important;
 }
 
-.sub_header nav ul li a{
+.sub_header nav ul li a {
     transition: all .3s;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
 
-.sub_header nav ul li a:hover{
+.sub_header nav ul li a:hover {
     color: rgb(144, 83, 246) !important;
 }
 
-.menu_slider .menu_btn{
+.menu_slider .menu_btn {
     color: rgb(144, 83, 246) !important;
 }
 
-.menu_slider ul{
+.menu_slider ul {
     border: 2px solid rgb(144, 83, 246);
 }
 
-.hero_section{
+.hero_section {
     padding: 150px 0px !important;
 }
 
-.hero_section h5{
+.hero_section h5 {
     font-size: 22px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
 }
 
-.hero_section h1{
+.hero_section h1 {
     font-size: 85px;
     font-weight: bold;
 }
 
-.hero_detail span i{
+.hero_detail span i {
     color: rgb(45, 168, 255);
 }
 
-.hero_detail p{
+.hero_detail p {
     font-family: "Montserrat", sans-serif;
 }
 
-.btn{
+.btn {
     background-color: rgb(144, 83, 246);
     width: 210px;
     padding: 15px;
@@ -80,12 +82,12 @@ header{
     border: none;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white !important;
     color: black;
 }
 
-.btn-white{
+.btn-white {
     background-color: rgb(255, 255, 255);
     color: black;
     width: 210px;
@@ -96,7 +98,7 @@ header{
     border: none;
 }
 
-.btn-white:hover{
+.btn-white:hover {
     background-color: rgb(144, 83, 246);
     color: white
 }
@@ -106,22 +108,22 @@ header{
 /* responsive for tablet screen */
 
 @media screen and (min-width:768px) and (max-width:992px) {
-    .hero_section h1{
+    .hero_section h1 {
         font-size: 70px;
     }
 }
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:767px) {
-    .hero_section{
+    .hero_section {
         padding: 120px 0px !important;
     }
-    
-    .hero_section h5{
+
+    .hero_section h5 {
         font-size: 20px;
     }
-    
-    .hero_section h1{
+
+    .hero_section h1 {
         font-size: 55px;
         font-weight: bold;
     }
@@ -129,55 +131,66 @@ header{
 
 /* about section start*/
 
-.content_container{
+.content_container {
     background-color: rgb(28, 21, 61);
     padding: 100px 0px;
 }
 
-.heading{
+.heading {
     font-size: 45px;
 }
 
-.content_detail_wrapper img{
+.content_detail_wrapper img {
     width: 100px;
     height: fit-content;
     margin-top: 8px;
 }
 
-.content_detail h3{
+.content_detail h3 {
     font-size: 35px;
 }
 
-.content_detail p{
+.content_detail p {
     color: rgb(198, 210, 210);
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
 }
 
 
-/* responsive for tablet screen */
-@media screen and (min-width:768px) and (max-width:992px) {
-    .content_container{
-        padding: 50px 0px;
-    }
-    
-    .content_img img{
+/* responsive for big screen */
+@media screen and (min-width:992px) and (max-width:1160px) {
+    .content_img img {
         width: 100% !important;
     }
 
-    .heading{
+    .content_detail_container .heading{
+        font-size: 38px;
+    }
+}
+
+/* responsive for tablet screen */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .content_container {
+        padding: 50px 0px;
+    }
+
+    .content_img img {
+        width: 100% !important;
+    }
+
+    .heading {
         font-size: 23px;
     }
 
-    .content_detail_wrapper img{
+    .content_detail_wrapper img {
         width: 60px;
     }
 
-    .content_detail h3{
+    .content_detail h3 {
         font-size: 18px;
     }
-    
-    .content_detail p{
+
+    .content_detail p {
         color: rgb(198, 210, 210);
         font-size: 12px;
         font-family: "Montserrat", sans-serif;
@@ -187,23 +200,23 @@ header{
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:767px) {
-    .content_img img{
+    .content_img img {
         width: 100% !important;
     }
 
-    .heading{
+    .heading {
         font-size: 25px;
     }
 
-    .content_detail_wrapper img{
+    .content_detail_wrapper img {
         width: 60px;
     }
 
-    .content_detail h3{
+    .content_detail h3 {
         font-size: 20px;
     }
-    
-    .content_detail p{
+
+    .content_detail p {
         color: rgb(198, 210, 210);
         font-size: 14px;
         font-family: "Montserrat", sans-serif;
@@ -213,36 +226,37 @@ header{
 
 /* horoscope section */
 
-.horoscope_section{
+.horoscope_section {
     background-image: url(../assets/img/bg-image/bg-4.jpg);
     background-size: cover;
     background-position: top center;
     padding: 100px 0px;
 }
 
-.horoscope{
+.horoscope {
     background-color: rgba(41, 23, 90, 0.8);
 }
 
-.horo_sign_img{
+.horo_sign_img {
     width: 50px;
 }
 
-.horo_line_img{
+.horo_line_img {
     width: 150px;
 }
 
-.horoscope h4{
+.horoscope h4 {
     font-size: 28px;
 }
-.horoscope span p{
+
+.horoscope span p {
     font-size: 21px;
     color: rgb(198, 210, 210);
 }
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:767px) {
-    .horoscope_section{
+    .horoscope_section {
         padding: 70px 0px;
     }
 }
@@ -250,7 +264,7 @@ header{
 
 /* welcome section */
 
-.welcome_section{
+.welcome_section {
     background-color: rgb(28, 21, 61);
     padding: 100px 0px;
 }
@@ -259,7 +273,98 @@ header{
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:767px) {
-    .welcome_section{
+    .welcome_section {
         padding: 70px 0px;
+    }
+}
+
+
+
+
+/* astro card section */
+
+.astro_card_section {
+    background-color: rgb(28, 21, 61);
+    padding: 100px 0px;
+}
+
+.border_gradient {
+    border-top: 1px solid;
+    /* Adjust the border thickness as needed */
+    border-image: linear-gradient(to right, rgb(28, 21, 61), rgb(28, 21, 61), rgba(255, 255, 255, 0.486), rgb(169, 169, 169), rgb(169, 169, 169), rgb(169, 169, 169), rgb(169, 169, 169), rgba(255, 255, 255, 0.486), rgb(28, 21, 61), rgb(28, 21, 61)) 1;
+}
+
+.astro_card_img img {
+    width: 100%;
+}
+
+.astro_name_detail h3 {
+    font-size: 28px;
+}
+
+.astro_name_detail h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.astro_card_text {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card_social_links a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 18px;
+    color: rgb(72, 72, 72);
+    transition: all .3s;
+}
+
+.card_social_links a:hover {
+    background-color: rgb(144, 83, 246);
+    color: white;
+}
+
+/* responsive for big screen */
+@media screen and (min-width:992px) and (max-width:1060px) {
+    .astro_name_detail h4 {
+        font-size: 14px;
+    }
+}
+
+
+/* responsive for tablet screen */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .astro_card_section {
+        padding: 70px 0px;
+    }
+    
+    .astro_name_detail h3 {
+        font-size: 18px;
+    }
+
+    .astro_name_detail h4 {
+        font-size: 10px;
+    }
+
+    .astro_card_text {
+        font-size: 12px;
+    }
+
+    .card_social_links a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+/* responsive for mobile screen */
+@media screen and (min-width:576px) and (max-width:767px) {
+    .astro_card_img{
+        width: 50%;
     }
 }
