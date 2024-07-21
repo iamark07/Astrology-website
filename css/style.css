@@ -134,8 +134,8 @@ header{
     padding: 100px 0px;
 }
 
-.about_detail_container h2{
-    font-size: 40px;
+.heading{
+    font-size: 45px;
 }
 
 .about_detail_wrapper img{
@@ -165,7 +165,7 @@ header{
         width: 100% !important;
     }
 
-    .about_detail_container h2{
+    .heading{
         font-size: 23px;
     }
 
@@ -191,7 +191,7 @@ header{
         width: 100% !important;
     }
 
-    .about_detail_container h2{
+    .heading{
         font-size: 25px;
     }
 
@@ -208,4 +208,49 @@ header{
         font-size: 14px;
         font-family: "Montserrat", sans-serif;
     }
+}
+
+
+/* horoscope section */
+
+.horoscope_section{
+    background-image: url(../assets/img/bg-image/bg-4.jpg);
+    background-size: cover;
+    background-position: top center;
+    padding: 100px 0px;
+}
+
+.horoscope{
+    background-color: rgba(41, 23, 90, 0.8);
+}
+
+.horo_sign_img{
+    width: 50px;
+}
+
+.horo_line_img{
+    width: 150px;
+}
+
+.horoscope h4{
+    font-size: 28px;
+}
+.horoscope span p{
+    font-size: 21px;
+    color: rgb(198, 210, 210);
+}
+
+/* responsive for mobile screen */
+@media screen and (min-width:340px) and (max-width:767px) {
+    .horoscope_section{
+        padding: 70px 0px;
+    }
+}
+
+
+/* welcome section */
+
+.welcome_section{
+    background-color: rgb(28, 21, 61);
+    padding: 100px 0px;
 }
