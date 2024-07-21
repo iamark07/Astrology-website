@@ -368,3 +368,24 @@ header {
         width: 50%;
     }
 }
+
+
+/* gallery section */
+
+.carousel-item {
+    transition: none;
+    -webkit-transition: none;
+    /* For Safari */
+}
+
+.gallery_carousel{
+    background-color: rgba(0, 0, 0, 0.523);
+}
+
+.caraousel_bg{
+    background: none !important;
+}
+
+.close_gallery{
+    border: none !important;
+}
