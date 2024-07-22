@@ -71,7 +71,7 @@ header {
     font-family: "Montserrat", sans-serif;
 }
 
-.btn {
+.btn-1 {
     background-color: rgb(144, 83, 246);
     width: 210px;
     padding: 15px;
@@ -82,12 +82,12 @@ header {
     border: none;
 }
 
-.btn:hover {
+.btn-1:hover {
     background-color: white !important;
     color: black;
 }
 
-.btn-white {
+.btn-2 {
     background-color: rgb(255, 255, 255);
     color: black;
     width: 210px;
@@ -98,7 +98,7 @@ header {
     border: none;
 }
 
-.btn-white:hover {
+.btn-2:hover {
     background-color: rgb(144, 83, 246);
     color: white
 }
@@ -373,8 +373,8 @@ header {
 /* gallery section */
 
 .carousel-item {
-    transition: none;
-    -webkit-transition: none;
+    transition: none !important;
+    -webkit-transition: none !important;
     /* For Safari */
 }
 
@@ -388,4 +388,67 @@ header {
 
 .close_gallery{
     border: none !important;
+}
+
+
+
+
+
+/* schedule section */
+
+.schedule_section{
+    background-image: url(../assets/img/bg-image/bg-2.jpg);
+    background-size: cover;
+    background-position: top center;
+    padding: 100px 0px;
+}
+
+.dates .active{
+    background-color: rgb(144, 83, 246) !important;
+    color: white !important;
+}
+
+.dates a{
+    background-color: white !important;
+    color: black !important;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s;
+    border-radius: 0px !important;
+}
+
+.dates a:hover{
+    background-color: rgb(144, 83, 246) !important;
+    color: white !important;
+}
+
+.dates a:hover{
+    color: black;
+}
+
+.schedule_detail_wrapper{
+    background-color: rgba(0, 0, 0, 0.523);
+}
+
+.schedule i{
+    color: rgb(45, 168, 255) !important;
+    font-size: 20px;
+}
+
+.schedule p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.astro_type h4{
+    font-size: 30px;
+}
+
+.astrologer p{
+    font-size: 22px;
+}
+
+.astrologer_detail p{
+    font-size: 17px;
+    color: rgb(198, 210, 210) !important;
+    font-family: "Montserrat", sans-serif;
 }
