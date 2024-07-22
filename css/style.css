@@ -163,7 +163,7 @@ header {
         width: 100% !important;
     }
 
-    .content_detail_container .heading{
+    .content_detail_container .heading {
         font-size: 38px;
     }
 }
@@ -342,7 +342,7 @@ header {
     .astro_card_section {
         padding: 70px 0px;
     }
-    
+
     .astro_name_detail h3 {
         font-size: 18px;
     }
@@ -364,7 +364,7 @@ header {
 
 /* responsive for mobile screen */
 @media screen and (min-width:576px) and (max-width:767px) {
-    .astro_card_img{
+    .astro_card_img {
         width: 50%;
     }
 }
@@ -378,15 +378,15 @@ header {
     /* For Safari */
 }
 
-.gallery_carousel{
+.gallery_carousel {
     background-color: rgba(0, 0, 0, 0.523);
 }
 
-.caraousel_bg{
+.caraousel_bg {
     background: none !important;
 }
 
-.close_gallery{
+.close_gallery {
     border: none !important;
 }
 
@@ -396,19 +396,19 @@ header {
 
 /* schedule section */
 
-.schedule_section{
+.schedule_section {
     background-image: url(../assets/img/bg-image/bg-2.jpg);
     background-size: cover;
     background-position: top center;
     padding: 100px 0px;
 }
 
-.dates .active{
+.dates .active {
     background-color: rgb(144, 83, 246) !important;
     color: white !important;
 }
 
-.dates a{
+.dates a {
     background-color: white !important;
     color: black !important;
     cursor: pointer;
@@ -417,38 +417,129 @@ header {
     border-radius: 0px !important;
 }
 
-.dates a:hover{
+.dates a:hover {
     background-color: rgb(144, 83, 246) !important;
     color: white !important;
 }
 
-.dates a:hover{
-    color: black;
-}
-
-.schedule_detail_wrapper{
+.schedule_detail_wrapper {
     background-color: rgba(0, 0, 0, 0.523);
 }
 
-.schedule i{
+.schedule i {
     color: rgb(45, 168, 255) !important;
     font-size: 20px;
 }
 
-.schedule p{
+.schedule p {
     font-family: "Montserrat", sans-serif;
 }
 
-.astro_type h4{
+.astro_type h4 {
     font-size: 30px;
 }
 
-.astrologer p{
+.astrologer p {
     font-size: 22px;
 }
 
-.astrologer_detail p{
+.astrologer_detail p {
     font-size: 17px;
     color: rgb(198, 210, 210) !important;
     font-family: "Montserrat", sans-serif;
+}
+
+
+/* get ticket section */
+
+.get_ticket{
+    margin-top: 90px;
+}
+
+.gat_ticket_btn{
+    width: 100%;
+}
+
+
+/* responsive for big screen */
+@media screen and (min-width:1200px) and (max-width:1250px) {
+    .schedule p {
+        font-size: 15px;
+    }
+}
+
+
+/* responsive for big screen */
+@media screen and (min-width:993px) and (max-width:1050px) {
+
+    /* get ticket section */
+    .gat_ticket_btn a .btn-1{
+        width: 100% !important;
+    }
+}
+
+
+/* responsive for tablet screen */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .dates a {
+        font-size: 15px;
+    }
+
+    .astro_type h4 {
+        font-size: 25px;
+    }
+
+    .schedule p {
+        font-size: 12px;
+    }
+
+    .astrologer p {
+        font-size: 18px;
+    }
+
+    .astrologer_detail p {
+        font-size: 14px;
+    }
+
+    /* get ticket section */
+
+    .gat_ticket_btn a .btn-1{
+        width: 100% !important;
+    }
+
+    .gat_ticket_btn a .btn-1{
+        font-size: 16px !important;
+    }
+}
+
+/* responsive for mobile screen */
+@media screen and (min-width:340px) and (max-width:767px) {
+    .schedule_section {
+        background-image: url(../assets/img/bg-image/bg-2.jpg);
+        background-size: cover;
+        background-position: top center;
+        padding: 70px 0px;
+    }
+
+    .dates a {
+        font-size: 13px;
+    }
+
+    .astro_type h4 {
+        font-size: 22px;
+    }
+
+    .astrologer_detail p {
+        font-size: 13px;
+    }
+
+
+    /* get ticket section */
+
+    .gat_ticket_btn a .btn-1{
+        width: 210px !important;
+        font-size: 19px !important;
+    }
+    
+
 }
