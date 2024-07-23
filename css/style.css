@@ -23,30 +23,92 @@
 
 /* contact number pop up */
 
-.contact_num_wrapper {
-    border-radius: 50%;
+.contact_num_container {
     position: fixed;
     bottom: 20px;
     left: 40px;
     cursor: pointer;
-    background-color: white;
     box-shadow: 0px 0px 15px 0px rgba(114, 114, 114, 0.439);
     z-index: 99;
 }
 
-.contact_num_wrapper .contact_icon {
+.contact_num_container .contact_icon {
     width: 50px;
     height: 50px;
     display: grid;
     place-items: center;
-
+    display: none;
+    background-color: white;
+    border-radius: 50%;
 }
 
-
-.contact_num_wrapper .contact_icon i {
+.contact_num_container .contact_icon i {
     color: rgb(144, 83, 246);
     font-size: 28px;
 }
+
+.contact_num_wrapper {
+    width: 250px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.close_contact_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.con_user_icon {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid rgb(144, 83, 246);
+}
+
+.con_user_icon i {
+    font-size: 40px;
+    color: rgb(144, 83, 246);
+}
+
+.contact_num h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact_num p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.con_social_links {
+    width: 100%;
+    overflow: hidden;
+    /* transition: border 0.3s ease; */
+    transition: all .2s;
+    /* border-top: 1px solid white; */
+}
+
+.con_social_links ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    justify-content: center;
+}
+
+.con_social_links ul li a i {
+    font-size: 40px;
+}
+
+.con_social_links.show {
+    border-top: 1px solid black;
+}
+
 
 
 /* header section */
@@ -255,7 +317,7 @@ header {
         display: none;
     }
 
-    .contact_num_wrapper {
+    .contact_num_container {
         bottom: 40px;
         left: 20px;
     }
