@@ -11,13 +11,41 @@
 
 /* got to top btn*/
 
-.go_to_top_btn{
+.go_to_top_btn {
     position: fixed;
     bottom: 20px;
     right: 40px;
     color: white !important;
     font-size: 25px;
     z-index: 50;
+}
+
+
+/* contact number pop up */
+
+.contact_num_wrapper {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px rgba(114, 114, 114, 0.439);
+    z-index: 99;
+}
+
+.contact_num_wrapper .contact_icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+
+}
+
+
+.contact_num_wrapper .contact_icon i {
+    color: rgb(144, 83, 246);
+    font-size: 28px;
 }
 
 
@@ -42,11 +70,11 @@ header {
     color: rgb(144, 83, 246) !important;
 }
 
-.sub_header nav ul li{
+.sub_header nav ul li {
     position: relative;
 }
 
-.sub_header nav ul li .drop_down{
+.sub_header nav ul li .drop_down {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -61,11 +89,11 @@ header {
     display: none;
 }
 
-.sub_header nav ul li:hover .drop_down{
+.sub_header nav ul li:hover .drop_down {
     display: block;
 }
 
-.sub_header nav ul li .drop_down li a{
+.sub_header nav ul li .drop_down li a {
     color: black !important;
     font-size: 14px;
 }
@@ -74,7 +102,7 @@ header {
     color: rgb(144, 83, 246) !important;
 }
 
-.sub_header nav ul li{
+.sub_header nav ul li {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -106,11 +134,11 @@ header {
     border: 2px solid rgb(144, 83, 246);
 }
 
-.menu_slider .menu_nav li a {   
+.menu_slider .menu_nav li a {
     color: black;
 }
 
-.menu_slider .menu_nav li span{
+.menu_slider .menu_nav li span {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -119,11 +147,11 @@ header {
     padding: 8px 0px;
 }
 
-.menu_slider .menu_nav li span:hover{
+.menu_slider .menu_nav li span:hover {
     color: rgb(144, 83, 246);
 }
 
-.menu_slider .menu_nav li .mob_drop_down{
+.menu_slider .menu_nav li .mob_drop_down {
     list-style: none;
     list-style: none;
     flex-direction: column;
@@ -142,6 +170,7 @@ header {
     transform: rotate(0deg);
     font-size: 20px;
 }
+
 .menu_slider .menu_nav li span:not(.collapsed) i {
     transform: rotate(180deg);
     font-size: 20px;
@@ -207,17 +236,39 @@ header {
 /* responsive for tablet screen */
 
 @media screen and (min-width:768px) and (max-width:992px) {
+
     .hero_section h1 {
         font-size: 70px;
     }
 
-    .sub_header nav ul li .drop_down{
+    .sub_header nav ul li .drop_down {
         left: 0%;
     }
 }
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:767px) {
+    /* got to top btn*/
+
+    .go_to_top_btn {
+        bottom: 40px;
+        display: none;
+    }
+
+    .contact_num_wrapper {
+        bottom: 40px;
+        left: 20px;
+    }
+
+    /* .contact_num_wrapper .contact_icon{
+        width: 30px;
+        height: 30px;       
+    }
+
+    .contact_num_wrapper .contact_icon i{
+        font-size: 22px;
+    } */
+
     .hero_section {
         padding: 120px 0px !important;
     }
@@ -475,32 +526,32 @@ header {
 
 /* gallery section */
 
-.gallery_section .gallery_link{
+.gallery_section .gallery_link {
     display: inline-block;
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.gallery_img{
+.gallery_img {
     border-radius: 0px !important;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
 }
 
-.gallery_section .gallery_link span{
+.gallery_section .gallery_link span {
     position: absolute;
     top: 0%;
     left: 0%;
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: none; 
+    background: none;
     transition: all .3s;
 }
 
-.gallery_section .gallery_link span:hover{
+.gallery_section .gallery_link span:hover {
     background-color: rgba(167, 132, 227, 0.465);
 }
 
@@ -514,7 +565,7 @@ header {
     background-color: rgba(0, 0, 0, 0.523);
 }
 
-.gallery_carousel_wrapper{
+.gallery_carousel_wrapper {
     height: 100dvh;
     width: 100%;
     display: flex !important;
@@ -522,7 +573,7 @@ header {
     align-items: center;
 }
 
-.modal-dialog{
+.modal-dialog {
     margin: 0px;
     /* width: 100vw !important;
     height: 100vh !important; */
@@ -535,7 +586,7 @@ header {
 
 /* carousel a tag */
 
-.carousel_link_arrow_btn{
+.carousel_link_arrow_btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -544,18 +595,19 @@ header {
     display: flex;
 }
 
-.pre_btn{
+.pre_btn {
     left: 5%;
 }
-.next_btn{
+
+.next_btn {
     right: 5%;
 }
 
 /* carousel arrow btn next prev */
 
-.carousel_arrow_btn{
+.carousel_arrow_btn {
     font-size: 40px;
-    color:white !important;
+    color: white !important;
 }
 
 /* close gallery icon */
@@ -568,14 +620,14 @@ header {
     right: 15px;
 }
 
-.close_gallery button span i{
+.close_gallery button span i {
     color: white !important;
     text-shadow: 0px;
     font-weight: lighter;
     font-size: 15px;
 }
 
-.carousel-indicators{
+.carousel-indicators {
     position: absolute;
     bottom: -20%;
 }
@@ -586,12 +638,12 @@ header {
     border-radius: 50%;
 }
 
-.carousel_img_wrapper{
+.carousel_img_wrapper {
     display: flex;
     justify-content: center;
 }
 
-.carousel_img{
+.carousel_img {
     width: 750px !important;
     height: 450px !important;
     object-fit: cover;
@@ -599,7 +651,7 @@ header {
 
 /* responsive for mobile screen */
 @media screen and (min-width:768px) and (max-width:992px) {
-    .carousel_img{
+    .carousel_img {
         width: 100% !important;
         height: 350px !important;
         object-fit: cover;
@@ -609,7 +661,7 @@ header {
 
 /* responsive for mobile screen */
 @media screen and (min-width:576px) and (max-width:767px) {
-    .carousel_img{
+    .carousel_img {
         width: 400px !important;
         height: 300px !important;
     }
@@ -617,28 +669,29 @@ header {
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:575px) {
-    .modal-dialog{
+    .modal-dialog {
         width: 100%;
     }
 
-    .modal-body{
+    .modal-body {
         padding: 0px;
     }
-    
-    .carousel_img{
+
+    .carousel_img {
         width: 100% !important;
         height: 250px !important;
     }
 
-    .carousel_arrow_btn{
+    .carousel_arrow_btn {
         font-size: 35px;
-        color:white !important;
+        color: white !important;
     }
 
-    .pre_btn{
+    .pre_btn {
         left: 2%;
     }
-    .next_btn{
+
+    .next_btn {
         right: 2%;
     }
 
@@ -650,7 +703,7 @@ header {
         right: 10px;
     }
 
-    .carousel-indicators{
+    .carousel-indicators {
         position: absolute;
         bottom: -30%;
     }
@@ -864,12 +917,12 @@ header {
     .partner_section .heading {
         font-size: 35px;
     }
-    
-    .partner_img{
+
+    .partner_img {
         width: 100%;
     }
 
-    .partner_img img{
+    .partner_img img {
         width: 100%;
     }
 }
@@ -888,23 +941,23 @@ header {
 
 /* footer section */
 
-footer{
+footer {
     background-image: url(../assets/img/bg-image/bg-3.jpg);
     background-size: cover;
     background-position: top center;
     padding: 100px 0px;
 }
 
-.footer_logo h2{
+.footer_logo h2 {
     font-size: 50px;
     font-weight: bold;
 }
 
-.footer_social_media ul li{
+.footer_social_media ul li {
     list-style: none;
 }
 
-.footer_social_media ul li a{
+.footer_social_media ul li a {
     width: 37px;
     height: 37px;
     display: grid;
@@ -916,12 +969,12 @@ footer{
     transition: all .3s;
 }
 
-.footer_social_media ul li a:hover{
+.footer_social_media ul li a:hover {
     color: rgb(144, 83, 246);
 }
 
 
-.subscribe_form form .footer_email_form{
+.subscribe_form form .footer_email_form {
     width: 300px;
     background: none;
     border: none;
@@ -933,11 +986,11 @@ footer{
     font-size: 15px;
 }
 
-.subscribe_form form .footer_email_form::placeholder{
+.subscribe_form form .footer_email_form::placeholder {
     color: white;
 }
 
-.copyright p{
+.copyright p {
     padding-top: 25px;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
@@ -947,15 +1000,15 @@ footer{
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:560px) {
-    footer{
+    footer {
         padding: 70px 0px;
     }
-    
-    .subscribe_form form .footer_email_form{
+
+    .subscribe_form form .footer_email_form {
         width: 180px;
     }
 
-    .subscribe_form form .btn-1{
+    .subscribe_form form .btn-1 {
         width: 90px;
         font-size: 10px;
         padding: 10px;

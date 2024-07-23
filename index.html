@@ -31,6 +31,15 @@
             <i class="ri-arrow-up-s-line"></i>
         </a>
 
+
+        <!-- contact number pop up -->
+
+        <div class="contact_num_wrapper">
+            <div class="contact_icon">
+                <i class="ri-phone-fill"></i>
+            </div>
+        </div>
+
         <!-- header section -->
         <header>
             <div class="sub_header">
@@ -132,8 +141,8 @@
                 </div>
                 <div
                     class="hero_btn_wrapper d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 gap-md-4 mt-5 mt-md-4">
-                    <a href="#"><button class="btn-1">Let's Begin</button></a>
-                    <a href="#"><button class="btn-2">Get Ticket</button></a>
+                    <a href="#get_ticket_trigger"><button class="btn-1">Let's Begin</button></a>
+                    <a href="#get_ticket_trigger"><button class="btn-2">Get Ticket</button></a>
                 </div>
             </section>
         </header>
@@ -908,7 +917,7 @@
                 </div>
             </div>
             <!-- get ticket section -->
-            <div class="get_ticket">
+            <div class="get_ticket" id="get_ticket_trigger">
                 <div class="row gap-3 gap-md-5 mx-0 justify-content-md-center">
                     <div class="col-12 col-md-7">
                         <h2 class="heading text-white pb-3"> Get Your Tickets Now</h2>
@@ -917,7 +926,7 @@
                     </div>
                     <div class="col-12 col-md-3 d-flex align-content-center flex-wrap">
                         <div class="gat_ticket_btn">
-                            <a href="#"><button class="btn-1">Let's Begin</button></a>
+                            <a href="#ticket_trigger"><button class="btn-1">Let's Begin</button></a>
                         </div>
                     </div>
                 </div>
@@ -1038,7 +1047,7 @@
                 <div class="col-12 d-flex justify-content-center mt-5">
                     <div class="subscribe_form">
                         <form action="" class="d-flex align-items-end flex-wrap gap-3">
-                            <input type="email" class="footer_email_form" placeholder="Email Address*">
+                            <input type="email" class="footer_email_form" placeholder="Email Address*" required>
                             <input type="submit" class="btn-1" value="Subscribe Now">
                         </form>
                     </div>
