@@ -24,7 +24,13 @@
 </head>
 
 <body>
-    <main>
+    <main id="go_to_top">
+
+        <!-- got to top btn -->
+
+        <a href="#go_to_top" class="go_to_top_btn">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
 
         <!-- header section -->
         <header>
@@ -43,47 +49,64 @@
                     </div>
                     <nav class="col-md-4 d-none d-md-flex justify-content-end p-0">
                         <ul class="d-flex align-content-center p-0 gap-4 mb-0 w-auto">
-                            <li class="d-flex align-content-center flex-wrap"><a href="#" class="text-white">About</a>
+                            <li class="d-flex align-content-center flex-wrap"><a href="#about_trigger" class="text-white">About</a>
                             </li>
-                            <li class="d-flex align-content-center flex-wrap"><a href="#"
+                            <li class="d-flex align-content-center flex-wrap"><a href="#welcome_trigger"
                                     class="text-white">Speakers</a></li>
-                            <li class="d-flex align-content-center flex-wrap"><a href="#"
+                            <li class="d-flex align-content-center flex-wrap"><a href="#schedule_trigger"
                                     class="text-white">Schedule</a></li>
-                            <li class="d-flex align-content-center flex-wrap"><a href="#" class="text-white">Ticket</a>
+                            <li class="d-flex align-content-center flex-wrap"><a href="#ticket_trigger" class="text-white">Ticket</a>
                             </li>
-                            <li class="d-flex align-content-center flex-wrap"><a href="#" class="text-white">Blocks</a>
+                            <li class="d-flex align-content-center flex-wrap text-white">Blocks
+                                <ul class="drop_down ps-0">
+                                    <li><a href="#about_trigger">About</a></li>
+                                    <li><a href="#horoscope_trigger">Horoscope</a></li>
+                                    <li><a href="#welcome_trigger">Speakers</a></li>
+                                    <li><a href="#gallery_trigger">Gallery</a></li>
+                                    <li><a href="#schedule_trigger">Schedule</a></li>
+                                    <li><a href="#ticket_trigger">Ticket</a></li>
+                                    <li><a href="#partners_trigger">Partners</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
                     <div class="menu_slider d-flex justify-content-center d-md-none position-relative">
-                        <nav
-                            class="navbar navbar-expand-lg w-100 d-flex justify-content-center position-absolute top-0 left-0">
+                        <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center position-absolute top-0 left-0">
                             <button class="navbar-toggler bg-dark border-0 outline-0 p-2 rounded-0" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="ri-menu-line fs-1 menu_btn"></i>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav ms-auto bg-white p-3">
+                                <ul class="menu_nav navbar-nav ms-auto bg-white p-3">
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">About</a>
+                                        <a class="nav-link text-dark" href="#about_trigger">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">Speakers</a>
+                                        <a class="nav-link text-dark" href="#welcome_trigger">Speakers</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">Schedule</a>
+                                        <a class="nav-link text-dark" href="#schedule_trigger">Schedule</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">Ticket</a>
+                                        <a class="nav-link text-dark" href="#ticket_trigger">Ticket</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">Blocks</a>
+                                    <li class="nav-item text-dark">
+                                        <span class="d-flex justify-content-between pb-2 collapsed" data-bs-toggle="collapse" data-bs-target="#mobDropDown">Blocks <i class="ri-arrow-up-s-line"></i></span>
+                                        <ul class="mob_drop_down ps-3 pt-2 collapse" id="mobDropDown">
+                                            <li><a href="#about_trigger">About</a></li>
+                                            <li><a href="#horoscope_trigger">Horoscope</a></li>
+                                            <li><a href="#welcome_trigger">Speakers</a></li>
+                                            <li><a href="#gallery_trigger">Gallery</a></li>
+                                            <li><a href="#schedule_trigger">Schedule</a></li>
+                                            <li><a href="#ticket_trigger">Ticket</a></li>
+                                            <li><a href="#partners_trigger">Partners</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
-                    </div>
+                    </div>                
                 </div>
             </div>
             <section class="hero_section w-100 d-flex flex-column align-content-center">
@@ -112,7 +135,7 @@
         </header>
 
         <!-- about section -->
-        <section class="about_section content_container">
+        <section class="about_section content_container" id="about_trigger">
             <div class="row mx-0 gap-5 gap-md-0 justify-content-center">
                 <div class="col-12 col-md-6 px-3 pe-md-3 ps-md-5">
                     <div class="content_img">
@@ -146,7 +169,7 @@
 
         <!-- horoscope section -->
 
-        <section class="horoscope_section">
+        <section class="horoscope_section" id="horoscope_trigger">
             <div class="container">
                 <h2 class="heading text-white text-center">What’s Your Sign? Read Your Daily <br> Horoscope Today</h2>
                 <div class="row mt-5 justify-content-center mx-0">
@@ -289,7 +312,7 @@
 
         <!-- welcome section -->
 
-        <section class="welcome_section content_section">
+        <section class="welcome_section content_section" id="welcome_trigger">
             <h2 class="heading text-white text-center pb-5">We Are Welcome</h2>
             <div class="row mx-0 gap-5 gap-md-0 gap-lg-5 justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4">
@@ -551,7 +574,7 @@
         </section> -->
 
 
-        <section class="gallery_section">
+        <section class="gallery_section" id="gallery_trigger">
             <div class="container mt-4">
                 <div class="row">
                     <div class="col-md-3 mb-4">
@@ -631,20 +654,24 @@
 
 
         <!-- schedule section -->
-        <section class="schedule_section px-3 px-lg-5">
+        <section class="schedule_section px-3 px-lg-5" id="schedule_trigger">
             <h2 class="heading text-white ps-2 pb-5">Schedule. Save the Date</h2>
             <div class="row justify-content-center mx-0">
                 <!-- Tab navigation -->
                 <div class="col-12 col-md-2 px-0">
-                    <ul class="nav nav-pills d-flex justify-content-center mb-4 mb-md-0 flex-column flex-sm-row flex-md-column gap-2">
+                    <ul
+                        class="nav nav-pills d-flex justify-content-center mb-4 mb-md-0 flex-column flex-sm-row flex-md-column gap-2">
                         <li class="nav-item dates">
-                            <a class="nav-link text-center text-md-start p-3 p-xl-4 active" id="day1-tab" data-bs-toggle="pill" href="#day1">Day 1 APR. 13. 2022</a>
+                            <a class="nav-link text-center text-md-start p-3 p-xl-4 active" id="day1-tab"
+                                data-bs-toggle="pill" href="#day1">Day 1 APR. 13. 2022</a>
                         </li>
                         <li class="nav-item dates">
-                            <a class="nav-link text-center text-md-start p-3 p-xl-4" id="day2-tab" data-bs-toggle="pill" href="#day2">Day 2 APR. 14. 2022</a>
+                            <a class="nav-link text-center text-md-start p-3 p-xl-4" id="day2-tab" data-bs-toggle="pill"
+                                href="#day2">Day 2 APR. 14. 2022</a>
                         </li>
                         <li class="nav-item dates">
-                            <a class="nav-link text-center text-md-start p-3 p-xl-4" id="day3-tab" data-bs-toggle="pill" href="#day3">Day 3 APR. 15. 2022</a>
+                            <a class="nav-link text-center text-md-start p-3 p-xl-4" id="day3-tab" data-bs-toggle="pill"
+                                href="#day3">Day 3 APR. 15. 2022</a>
                         </li>
                     </ul>
                 </div>
@@ -857,7 +884,8 @@
                 <div class="row gap-3 gap-md-5 mx-0 justify-content-md-center">
                     <div class="col-12 col-md-7">
                         <h2 class="heading text-white pb-3"> Get Your Tickets Now</h2>
-                        <p class="text-white">Are you struggling with a question or confusing situation? If so, you may want to consider an affordable professional reading with our astrologists.</p>
+                        <p class="text-white">Are you struggling with a question or confusing situation? If so, you may
+                            want to consider an affordable professional reading with our astrologists.</p>
                     </div>
                     <div class="col-12 col-md-3 d-flex align-content-center flex-wrap">
                         <div class="gat_ticket_btn">
@@ -868,11 +896,132 @@
             </div>
         </section>
 
+        <!-- ticket price section -->
+
+        <section class="ticket_price_section" id="ticket_trigger">
+            <h2 class="heading text-white px-3 px-sm-5 ps-md-4 ps-lg-5">Tickets</h2>
+            <div class="row mx-0 justify-content-between px-3 px-sm-5 px-md-2 px-lg-5">
+                <div class="col-md-4 col-lg-3 px-0 px-md-2 ps-lg-0">
+                    <div class="ticket_detail">
+                        <p>Once your Astrological Consultation is confirmed, please pay for the session using the link
+                            below.</p>
+                        <img src="assets/img/arrow_img.png" alt="" class="mt-4">
+                    </div>
+                </div>
+                <div class="col-md-4 px-0 px-md-2 mt-5 mt-md-0">
+                    <div class="ticket_price_wrapper">
+                        <div class="ticket_price py-4 text-center">
+                            <h2 class="heading text-white">$180</h2>
+                            <p class="text-white">2-3days</p>
+                        </div>
+                        <ul class="mt-4 ps-0">
+                            <li class="text-white text-center py-3">Two days ticket</li>
+                            <li class="text-white text-center py-3">Catering</li>
+                            <li class="text-white text-center py-3">Party</li>
+                            <li class="text-white text-center py-3">-</li>
+                            <li class="pt-4"><a href="#"><button class="btn-2">Get Ticket</button></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 px-0 px-md-2 mt-5 mt-md-0">
+                    <div class="ticket_price_wrapper">
+                        <div class="ticket_price py-4 text-center">
+                            <h2 class="heading text-white">$250</h2>
+                            <p class="text-white">2-3days</p>
+                        </div>
+                        <ul class="mt-4 ps-0">
+                            <li class="text-white text-center py-3">All Days</li>
+                            <li class="text-white text-center py-3">All Workshops</li>
+                            <li class="text-white text-center py-3">Free Bar</li>
+                            <li class="text-white text-center py-3">Party</li>
+                            <li class="pt-4"><a href="#"><button class="btn-2">Get Ticket</button></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- partner section -->
 
+        <section class="partner_section" id="partners_trigger">
+            <div class="row align-items-center px-2 px-md-3 px-xl-5 mx-0">
+                <div class="co-12 col-md-4">
+                    <h2 class="heading text-white">Our Partners</h2>
+                    <img src="assets/img/arrow_img.png" alt="" class="mt-3">
+                </div>
+                <div class="co-12 col-md-8 mt-5 mt-md-0">
+                    <div class="row gap-5 gap-md-0">
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="partner_img">    
+                                <img src="assets/img/partner-1.png" alt="">
+                            </div>                     
+                        </div>
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="partner_img">    
+                                <img src="assets/img/partner-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="partner_img">    
+                                <img src="assets/img/partner-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- footer section -->
 
+        <footer class="footer_section">
+            <div class="row mx-0">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="footer_logo">
+                        <h2 class="text-white">Astro</h2>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-3">
+                    <div class="footer_social_media">
+                        <ul class="d-flex gap-3 ps-0">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-youtube-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-5">
+                    <div class="subscribe_form">
+                        <form action="" class="d-flex align-items-end flex-wrap gap-3">
+                            <input type="email" class="footer_email_form" placeholder="Email Address*">
+                            <input type="submit" class="btn-1" value="Subscribe Now">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-5">
+                    <div class="copyright">
+                        <p class="text-white">Copyright © 2021. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

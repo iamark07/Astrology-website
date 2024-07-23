@@ -6,7 +6,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+/* got to top btn*/
+
+.go_to_top_btn{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    color: white !important;
+    font-size: 25px;
+    z-index: 50;
+}
+
 
 /* header section */
 header {
@@ -29,12 +42,53 @@ header {
     color: rgb(144, 83, 246) !important;
 }
 
+.sub_header nav ul li{
+    position: relative;
+}
+
+.sub_header nav ul li .drop_down{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px !important;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: lighter;
+    display: none;
+}
+
+.sub_header nav ul li:hover .drop_down{
+    display: block;
+}
+
+.sub_header nav ul li .drop_down li a{
+    color: black !important;
+    font-size: 14px;
+}
+
+.sub_header nav ul li{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.sub_header nav ul li:hover {
+    color: rgb(144, 83, 246) !important;
+}
+
 .sub_header nav ul li a {
     transition: all .3s;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
+
 
 .sub_header nav ul li a:hover {
     color: rgb(144, 83, 246) !important;
@@ -44,8 +98,49 @@ header {
     color: rgb(144, 83, 246) !important;
 }
 
-.menu_slider ul {
+.menu_slider .menu_nav {
     border: 2px solid rgb(144, 83, 246);
+}
+
+.menu_slider .menu_nav li a {   
+    color: black;
+}
+
+.menu_slider .menu_nav li span{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 8px 0px;
+}
+
+.menu_slider .menu_nav li span:hover{
+    color: rgb(144, 83, 246);
+}
+
+.menu_slider .menu_nav li .mob_drop_down{
+    list-style: none;
+    list-style: none;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: lighter;
+    display: none;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.menu_slider .menu_nav li .mob_drop_down.collapse.show {
+    display: flex;
+}
+
+/* Rotate the icon */
+.menu_slider .menu_nav li span.collapsed i {
+    transform: rotate(0deg);
+    font-size: 20px;
+}
+.menu_slider .menu_nav li span:not(.collapsed) i {
+    transform: rotate(180deg);
+    font-size: 20px;
 }
 
 .hero_section {
@@ -110,6 +205,10 @@ header {
 @media screen and (min-width:768px) and (max-width:992px) {
     .hero_section h1 {
         font-size: 70px;
+    }
+
+    .sub_header nav ul li .drop_down{
+        left: 0%;
     }
 }
 
@@ -452,11 +551,11 @@ header {
 
 /* get ticket section */
 
-.get_ticket{
+.get_ticket {
     margin-top: 90px;
 }
 
-.gat_ticket_btn{
+.gat_ticket_btn {
     width: 100%;
 }
 
@@ -473,7 +572,7 @@ header {
 @media screen and (min-width:993px) and (max-width:1050px) {
 
     /* get ticket section */
-    .gat_ticket_btn a .btn-1{
+    .gat_ticket_btn a .btn-1 {
         width: 100% !important;
     }
 }
@@ -503,11 +602,11 @@ header {
 
     /* get ticket section */
 
-    .gat_ticket_btn a .btn-1{
+    .gat_ticket_btn a .btn-1 {
         width: 100% !important;
     }
 
-    .gat_ticket_btn a .btn-1{
+    .gat_ticket_btn a .btn-1 {
         font-size: 16px !important;
     }
 }
@@ -515,9 +614,6 @@ header {
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:767px) {
     .schedule_section {
-        background-image: url(../assets/img/bg-image/bg-2.jpg);
-        background-size: cover;
-        background-position: top center;
         padding: 70px 0px;
     }
 
@@ -536,10 +632,166 @@ header {
 
     /* get ticket section */
 
-    .gat_ticket_btn a .btn-1{
+    .gat_ticket_btn a .btn-1 {
         width: 210px !important;
         font-size: 19px !important;
     }
-    
+}
 
+
+/* ticket price section */
+
+.ticket_price_section {
+    background-color: rgb(28, 21, 61);
+    padding: 100px 0px;
+}
+
+.ticket_detail p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: rgb(198, 210, 210) !important;
+}
+
+.ticket_price {
+    background-color: rgb(74, 46, 135);
+}
+
+.ticket_price_wrapper ul li {
+    border-bottom: 1px solid rgb(74, 46, 135);
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.ticket_price_wrapper ul li:last-child {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* responsive for mobile screen */
+@media screen and (min-width:340px) and (max-width:767px) {
+
+    /* ticket price section */
+
+    .ticket_price_section {
+        padding: 60px 0px;
+    }
+}
+
+
+
+/* partner section */
+
+.partner_section {
+    background-image: url(../assets/img/bg-image/bg-5.jpg);
+    background-size: cover;
+    background-position: top center;
+    padding: 70px 0px;
+}
+
+
+
+/* responsive for tablet or big screen */
+@media screen and (min-width:768px) and (max-width:1150px) {
+    .partner_section .heading {
+        font-size: 35px;
+    }
+    
+    .partner_img{
+        width: 100%;
+    }
+
+    .partner_img img{
+        width: 100%;
+    }
+}
+
+/* responsive for mobile screen */
+@media screen and (min-width:340px) and (max-width:767px) {
+
+    /* ticket price section */
+
+    .partner_section .heading {
+        font-size: 30px;
+    }
+}
+
+
+
+/* footer section */
+
+footer{
+    background-image: url(../assets/img/bg-image/bg-3.jpg);
+    background-size: cover;
+    background-position: top center;
+    padding: 100px 0px;
+}
+
+.footer_logo h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.footer_social_media ul li{
+    list-style: none;
+}
+
+.footer_social_media ul li a{
+    width: 37px;
+    height: 37px;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all .3s;
+}
+
+.footer_social_media ul li a:hover{
+    color: rgb(144, 83, 246);
+}
+
+
+.subscribe_form form .footer_email_form{
+    width: 300px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
+    padding: 10px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.subscribe_form form .footer_email_form::placeholder{
+    color: white;
+}
+
+.copyright p{
+    padding-top: 25px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* responsive for mobile screen */
+@media screen and (min-width:340px) and (max-width:560px) {
+    footer{
+        padding: 70px 0px;
+    }
+    
+    .subscribe_form form .footer_email_form{
+        width: 180px;
+    }
+
+    .subscribe_form form .btn-1{
+        width: 90px;
+        font-size: 10px;
+        padding: 10px;
+    }
 }
