@@ -515,7 +515,7 @@ header {
 }
 
 .gallery_carousel_wrapper{
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     display: flex !important;
     justify-content: center !important;
@@ -540,8 +540,15 @@ header {
     top: 50%;
     transform: translateY(-50%);
     height: fit-content;
-    display: inline-block;
     width: 30px;
+    display: flex;
+}
+
+.pre_btn{
+    left: 5%;
+}
+.next_btn{
+    right: 5%;
 }
 
 /* carousel arrow btn next prev */
@@ -558,13 +565,19 @@ header {
     padding: 0px !important;
     position: absolute;
     top: -20px;
-    right: 20px;
+    right: 15px;
 }
 
 .close_gallery button span i{
     color: white !important;
     text-shadow: 0px;
     font-weight: lighter;
+    font-size: 15px;
+}
+
+.carousel-indicators{
+    position: absolute;
+    bottom: -20%;
 }
 
 .carousel-indicators li {
@@ -579,7 +592,18 @@ header {
 }
 
 .carousel_img{
-    width: 600px !important;
+    width: 750px !important;
+    height: 450px !important;
+    object-fit: cover;
+}
+
+/* responsive for mobile screen */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .carousel_img{
+        width: 100% !important;
+        height: 350px !important;
+        object-fit: cover;
+    }
 }
 
 
@@ -587,20 +611,51 @@ header {
 @media screen and (min-width:576px) and (max-width:767px) {
     .carousel_img{
         width: 400px !important;
+        height: 300px !important;
     }
 }
 
 /* responsive for mobile screen */
 @media screen and (min-width:340px) and (max-width:575px) {
+    .modal-dialog{
+        width: 100%;
+    }
+
+    .modal-body{
+        padding: 0px;
+    }
+    
     .carousel_img{
-        width: 270px !important;
+        width: 100% !important;
+        height: 250px !important;
     }
 
     .carousel_arrow_btn{
         font-size: 35px;
         color:white !important;
     }
+
+    .pre_btn{
+        left: 2%;
+    }
+    .next_btn{
+        right: 2%;
+    }
+
+    .close_gallery {
+        border: none !important;
+        padding: 0px !important;
+        position: absolute;
+        top: -50px;
+        right: 10px;
+    }
+
+    .carousel-indicators{
+        position: absolute;
+        bottom: -30%;
+    }
 }
+
 
 
 
