@@ -220,12 +220,47 @@ header {
     color: rgb(144, 83, 246) !important;
 }
 
+
+
 .menu_slider .menu_btn {
     color: rgb(144, 83, 246) !important;
 }
 
-.menu_slider .menu_nav {
+.menu_slider_items {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    transition: left 0.3s ease; /* Smooth transition for sliding effect */
+    z-index: 990;
+}
+
+.menu_nav_links_wrapper {
+    width: 65%;
     border: 2px solid rgb(144, 83, 246);
+    height: 100%;
+    background: white; /* Ensure the background covers the whole area */
+}
+
+.close_menu_slider {
+    width: 35%;
+    height: 100dvh;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu_slider_items.collapse.show {
+    left: 0; /* Slide in when menu is shown */
+}
+
+.menu_slider_items.collapse:not(.show) {
+    left: -100%; /* Slide out when menu is hidden */
+}
+
+.menu_slider_items .logo {
+    color: rgb(144, 83, 246);
+    font-size: 30px !important;
 }
 
 .menu_slider .menu_nav li a {
@@ -237,7 +272,7 @@ header {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
     padding: 8px 0px;
 }
 
@@ -247,12 +282,17 @@ header {
 
 .menu_slider .menu_nav li .mob_drop_down {
     list-style: none;
-    list-style: none;
     flex-direction: column;
     gap: 5px;
     font-weight: lighter;
     display: none;
     border-top: 1px solid rgb(0, 0, 0);
+}
+
+.menu_slider .menu_nav li .mob_drop_down li a {
+    padding: 8px 0px;
+    display: inline-block;
+    width: 100%;
 }
 
 .menu_slider .menu_nav li .mob_drop_down.collapse.show {
